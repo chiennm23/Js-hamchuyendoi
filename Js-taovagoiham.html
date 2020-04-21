@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function processConfirm(answer) {
+        let result = "";
+        if (answer){
+            result = "That right!";
+        }else {
+            result = "Maybe later then.";
+        }
+        return result;
+    }
+    //confirm là hàm cố định
+    let confirmAnswer = confirm("Do you go by car today?");
+    let theAnswer = processConfirm(confirmAnswer);
+    alert(theAnswer);
+</script>
+</body>
+</html>

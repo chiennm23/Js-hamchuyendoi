@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen doi giua met va ft</title>
+</head>
+<body>
+<h3>Amount</h3>
+<input id="amount" type="text" placeholder="Value To Convert">
+<h3>From</h3>
+<select id="from">
+    <option value="1">Feet</option>
+    <option value="0.305">Met</option>
+</select>
+<h3>To</h3>
+<select id="to">
+    <option value="0.305">Met</option>
+    <option value="1">Feet</option>
+</select><br><br>
+<input type="button" onclick="convert();" value="Convert">
+<input type="text" id="result" placeholder="Result">
+<script>
+    function convert() {
+        let to = document.getElementById("to").value;
+        let from = document.getElementById("from").value;
+        let amuont = document.getElementById("amount").value;
+        Result =amuont * to /from;
+        document.getElementById("result").value = Result.toFixed(3);
+    }
+</script>
+</body>
+</html>
